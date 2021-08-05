@@ -13,11 +13,11 @@ type User struct {
 func GetOneEntity() (User, error) {
 	var res User
 	result := db.Where("id = 3").Find(&res)
+	if errors.Is(result.Error, gorm.ErrRecordNotFound) {
+		return res, errors.Wrap(result.Error, "user: record not found")
+	}
 	if result.Error != nil {
-		if errors.Is(result.Error, gorm.ErrRecordNotFound) {
-			return User{}, errors.Wrap(result.Error, "user: record not found")
-		}
-		return User{}, result.Error
+		return res, errors.Wrap(result.Error, "query error")
 	}
 	return res, nil
 }

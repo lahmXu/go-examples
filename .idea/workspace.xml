@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="feat: week02" />
+    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: commit code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week01/example/biz/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/week01/example/biz/dao.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +51,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Build.go build go-examples/week01/example">
+    <configuration name="go build go-examples/week01/example" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-examples" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="go-examples/week01/example" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/week01/example/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build go-examples/week02" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
       <working_directory value="$PROJECT_DIR$" />
@@ -60,6 +72,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build go-examples/week01/example" />
         <item itemvalue="Go Build.go build go-examples/week02" />
       </list>
     </recent_temporary>
@@ -83,7 +96,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat: week02" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: week02" />
+    <MESSAGE value="fix: commit code" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: commit code" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
