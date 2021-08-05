@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: commit code">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: week01订正作业">
       <change beforePath="$PROJECT_DIR$/week01/example/biz/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/week01/example/biz/dao.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
-  <component name="RunManager" selected="Go Build.go build go-examples/week01/example">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build go-examples/week01/example" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
       <working_directory value="$PROJECT_DIR$" />
@@ -70,8 +69,18 @@
       <filePath value="$PROJECT_DIR$/week02/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-examples" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="go-examples" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/week01/example/main.go" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build go-examples/week01/example" />
         <item itemvalue="Go Build.go build go-examples/week02" />
       </list>
@@ -97,7 +106,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat: week02" />
     <MESSAGE value="fix: commit code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: commit code" />
+    <MESSAGE value="fix: week01" />
+    <MESSAGE value="fix: week01订正作业" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: week01订正作业" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -107,5 +118,16 @@
         <entry key="GOPROXY" value="https://goproxy.cn,direct" />
       </map>
     </environment>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/week01/example/biz/db.go</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,10 +2,10 @@ package biz
 
 import (
 	"fmt"
-	"log"
-
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"github.com/pkg/errors"
+	"log"
 )
 
 var db *gorm.DB
@@ -25,6 +25,10 @@ func Init() {
 	fmt.Println("========================")
 	_, resErr := GetOneEntity()
 	if resErr != nil {
-		fmt.Printf("%+v", resErr)
+		if errors.Is(resErr, gorm.ErrRecordNotFound) {
+			fmt.Println("result is empty")
+		} else {
+			fmt.Printf("%+v", resErr)
+		}
 	}
 }
