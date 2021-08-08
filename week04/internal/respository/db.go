@@ -3,7 +3,7 @@ package respository
 import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	config "go-examples/week03/configs"
+	config "go-examples/week04/configs"
 	"log"
 	"time"
 )
