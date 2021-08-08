@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package myapp.user.v1;
+option go_package = "api/myapp/user/v1";
+
+service UserServer {
+    rpc GetUserInfo(GetUserInfoRequest) returns (GetUserInfoResponse){}
+}
+
+message GetUserInfoRequest{}
+
+message GetUserInfoResponse{
+    string username = 1;
+    string city = 2;
+}

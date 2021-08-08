@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: week01订正作业">
-      <change beforePath="$PROJECT_DIR$/week01/example/biz/dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/week01/example/biz/dao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/api/myapp/user/v1/user.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/cmd/myapp/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/configs/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/configs/yaml.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/internal/domain/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/internal/respository/db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/internal/respository/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week03/internal/service/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +29,16 @@
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="fix: week01订正作业" />
+        <option name="rewordedMessage" value="fix: week01订正作业" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="c5117c3698a6ef6b879b4872ee0ee05f0205583e" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -43,12 +63,18 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week03/internal/respository" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week03/internal/respository" />
+      <recent name="$PROJECT_DIR$/week03/configs" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build go-examples/week01/example" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">

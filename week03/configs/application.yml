@@ -1,0 +1,5 @@
+app:
+  port: 8081
+db:
+  dbtype: "mysql"
+  connstr: "root:Admin@12345678@tcp(40.73.16.169:3306)/dplatform2?charset=utf8&parseTime=True&loc=Local"
