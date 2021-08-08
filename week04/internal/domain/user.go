@@ -1,20 +1,13 @@
 package domain
 
-import "context"
+import "go-examples/week04/internal/respository"
 
-// User 用户
+// User 用户实体
 type User struct {
-	ID   int
-	Name string
-	City string
+	respository.Model
+	Name string `gorm:"column:name;not null;type:varchar(50);commnet:'名称'" json:"name"` //名称
 }
 
-// IUserUsecase IUserUsecase
-type IUserUsecase interface {
-	GetUserInfo(ctx context.Context, id int) (*User, error)
-}
-
-// IUserRepo IUserRepo
-type IUserRepo interface {
-	GetUserInfo(ctx context.Context, id int) (*User, error)
+type UserDomain interface {
+	GetUserByID(id int) (*User, error)
 }

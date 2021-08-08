@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: week01订正作业">
-      <change afterPath="$PROJECT_DIR$/week03/api/myapp/user/v1/user.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week03/cmd/myapp/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week03/configs/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week03/configs/yaml.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week03/internal/domain/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week03/internal/respository/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week03/internal/respository/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week03/internal/service/user.go" afterDir="false" />
+    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: gin+gorm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week04/configs/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/week04/configs/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +54,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/week03/internal/respository" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/week04/api/myapp/user/v1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -72,6 +63,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week04/api/myapp/user/v1" />
       <recent name="$PROJECT_DIR$/week03/internal/respository" />
       <recent name="$PROJECT_DIR$/week03/configs" />
     </key>
@@ -134,7 +126,10 @@
     <MESSAGE value="fix: commit code" />
     <MESSAGE value="fix: week01" />
     <MESSAGE value="fix: week01订正作业" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: week01订正作业" />
+    <MESSAGE value="feat: week03" />
+    <MESSAGE value="fix: rename" />
+    <MESSAGE value="fix: gin+gorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: gin+gorm" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -149,7 +144,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/week01/example/biz/db.go</url>
+          <url>file://$PROJECT_DIR$/week02/example/biz/db.go</url>
           <line>26</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
