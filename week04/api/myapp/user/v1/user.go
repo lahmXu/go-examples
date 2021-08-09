@@ -1,6 +1,8 @@
 package v1
 
-import "github.com/gin-gonic/gin"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 // User 用户
 type User struct {
@@ -8,7 +10,7 @@ type User struct {
 	Name string
 }
 
-// UserApi UserApi
-type UserApi interface {
+// IUser IUser
+type IUser interface {
 	GetUserInfo(c *gin.Context)
 }

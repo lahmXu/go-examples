@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: gin+gorm">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week04/configs/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/week04/configs/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week04/api/myapp/user/v1/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/week04/api/myapp/user/v1/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week04/cmd/myapp/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/week04/cmd/myapp/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week04/internal/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/week04/internal/service/user.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +27,12 @@
   <component name="GitRewordedCommitMessages">
     <option name="commitMessagesMapping">
       <RewordedCommitMessageMapping>
-        <option name="originalMessage" value="fix: week01订正作业" />
-        <option name="rewordedMessage" value="fix: week01订正作业" />
+        <option name="originalMessage" value="fix: gin+gorm" />
+        <option name="rewordedMessage" value="fix: gin+gorm" />
       </RewordedCommitMessageMapping>
     </option>
     <option name="currentCommit" value="1" />
-    <option name="onto" value="c5117c3698a6ef6b879b4872ee0ee05f0205583e" />
+    <option name="onto" value="4678f3f40b780e1fc2928926ea29288128542b2b" />
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />

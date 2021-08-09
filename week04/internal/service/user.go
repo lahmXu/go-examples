@@ -9,11 +9,11 @@ import (
 	"strconv"
 )
 
-type UserApi struct {
+type UserService struct {
 	domain.UserDomain
 }
 
-func (u UserApi) GetUserInfo(c *gin.Context) {
+func (u UserService) GetUserInfo(c *gin.Context) {
 	ctx := Gin{Context: c}
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {

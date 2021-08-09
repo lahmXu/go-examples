@@ -1,11 +1,12 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"
+	v1 "go-examples/week04/api/myapp/user/v1"
 	config "go-examples/week04/configs"
 	db "go-examples/week04/internal/respository"
-	"go-examples/week04/internal/service"
 	"net/http"
 )
 
@@ -23,8 +24,10 @@ func serverInit() {
 
 	r := g.Group("/api")
 	{
-		version := r.Group("/user")
-		version.GET("/:id", service.UserApi.GetUserInfo)
+		userGroup := r.Group("/user")
+
+		// TODO 这边调用这个接口(v1.IUser.GetUserInfo)一直报错,求指导
+		userGroup.GET("/:id", v1.IUser.GetUserInfo)
 
 	}
 	// start http server
