@@ -2,45 +2,41 @@ package main
 
 import (
 	"context"
-	"fmt"
-	"github.com/gin-gonic/gin"
-	v1 "go-examples/week04/api/myapp/user/v1"
-	config "go-examples/week04/configs"
+	"github.com/pkg/errors"
 	db "go-examples/week04/internal/respository"
-	"net/http"
+	"go-examples/week04/internal/service"
+	"golang.org/x/sync/errgroup"
+	"log"
+	"os"
+	"os/signal"
+	"syscall"
 )
 
 func main() {
-	db.Init()
-	serverInit()
+	g, ctx := errgroup.WithContext(context.Background())
 
-}
+	g.Go(func() error {
+		return db.Init()
+	})
 
-func serverInit() {
-	gin.SetMode(gin.DebugMode)
-	g := gin.New()
-	// 配置日志输出对象为zap logger
-	g.Use(gin.Recovery())
+	g.Go(func() error {
+		return service.Init()
+	})
 
-	r := g.Group("/api")
-	{
-		userGroup := r.Group("/user")
+	g.Go(func() error {
+		// 监听信号, ctrl+c 是发送 SIGINT 信号，终止一个进程
+		quit := make(chan os.Signal)
+		signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
 
-		// TODO 这边调用这个接口(v1.IUser.GetUserInfo)一直报错,求指导
-		userGroup.GET("/:id", v1.IUser.GetUserInfo)
+		select {
+		case <-ctx.Done():
+			log.Println("context done. exiting...")
+			return ctx.Err()
+		case sig := <-quit:
+			log.Printf("receive os signal: %v", sig)
+			return errors.New("receive quit signal.")
+		}
+	})
 
-	}
-	// start http server
-	listenAddress := fmt.Sprintf(":%d", config.YamlConfig.App.Port)
-	maxHeaderBytes := 1 << 20
-
-	server := &http.Server{
-		Addr:           listenAddress,
-		Handler:        g,
-		ReadTimeout:    config.YamlConfig.App.ReadTimeout,
-		WriteTimeout:   config.YamlConfig.App.WriteTimeout,
-		MaxHeaderBytes: maxHeaderBytes,
-	}
-	server.ListenAndServe()
-
+	log.Printf("[main] exiting: %+v\n", g.Wait())
 }

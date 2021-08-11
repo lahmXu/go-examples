@@ -20,15 +20,18 @@ type Model struct {
 	IsDeleted int8      `gorm:"column:is_deleted;not null;default:0;type:tinyint(4);commnet:'是否删除，0-存在，1-删除'" json:"is_deleted"` //是否删除，0-存在，1-删除
 }
 
-func Init() {
+func Init() error {
 	var err error
 	db, err = gorm.Open(config.YamlConfig.DB.DbType, config.YamlConfig.DB.ConnStr)
 
 	if err != nil {
 		log.Fatalf("models.Setup err: %v", err)
+		return err
 	}
 
 	db.SingularTable(true)
 	db.DB().SetMaxIdleConns(10)
 	db.DB().SetMaxOpenConns(100)
+
+	return nil
 }

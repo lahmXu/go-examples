@@ -13,14 +13,14 @@ type UserService struct {
 	domain.UserDomain
 }
 
-func (u UserService) GetUserInfo(c *gin.Context) {
+func (userRepo UserService) GetUserInfo(c *gin.Context) {
 	ctx := Gin{Context: c}
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		ctx.Response(400, errors.New("param error."))
 		return
 	}
-	result, err := u.GetUserByID(id)
+	result, err := userRepo.GetUserByID(id)
 	if err != nil {
 		ctx.Response(500, errors.New("server error."))
 		return
