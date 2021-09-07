@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="fix: commit code">
-      <change afterPath="$PROJECT_DIR$/week05/target.md" afterDir="false" />
+    <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="feat: commit code">
+      <change afterPath="$PROJECT_DIR$/week05/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/metric/bucket.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/metric/metric_collector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/metric/rolling.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/metric/timing.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/metric/window.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +67,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,7 +76,7 @@
       <recent name="$PROJECT_DIR$/week03/configs" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
     <configuration name="go build go-examples/week01/example" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
       <working_directory value="$PROJECT_DIR$" />
@@ -87,6 +95,15 @@
       <filePath value="$PROJECT_DIR$/week02/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-examples" />
+      <working_directory value="$PROJECT_DIR$/week05" />
+      <kind value="FILE" />
+      <package value="go-examples" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/week05/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
       <working_directory value="$PROJECT_DIR$" />
@@ -98,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build go-examples/week01/example" />
         <item itemvalue="Go Build.go build go-examples/week02" />
@@ -129,7 +147,8 @@
     <MESSAGE value="fix: rename" />
     <MESSAGE value="fix: gin+gorm" />
     <MESSAGE value="fix: commit code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: commit code" />
+    <MESSAGE value="feat: commit code" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: commit code" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
