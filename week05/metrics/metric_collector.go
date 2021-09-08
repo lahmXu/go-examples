@@ -5,8 +5,8 @@ import (
 	"time"
 )
 
-// Collector 接口
-type Collector interface {
+// MetricCollector 接口
+type MetricCollector interface {
 	Update(Result)
 	Reset()
 }
@@ -31,7 +31,7 @@ type Result struct {
 	RunDuration   time.Duration
 }
 
-func NewDefaultCollector() Collector {
+func NewDefaultCollector() MetricCollector {
 	m := &DefaultMetricCollector{}
 	m.mutex = &sync.RWMutex{}
 	m.Reset()
