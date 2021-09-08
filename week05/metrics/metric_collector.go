@@ -1,13 +1,11 @@
-package metric
+package metrics
 
 import (
 	"sync"
 	"time"
 )
 
-// Collector represents the contract that all collectors must fulfill to gather circuit statistics.
-// Implementations of this interface do not have to maintain locking around thier data stores so long as
-// they are not modified outside of the hystrix context.
+// Collector 接口
 type Collector interface {
 	Update(Result)
 	Reset()
@@ -33,7 +31,7 @@ type Result struct {
 	RunDuration   time.Duration
 }
 
-func NewDefaultMetricCollector() Collector {
+func NewDefaultCollector() Collector {
 	m := &DefaultMetricCollector{}
 	m.mutex = &sync.RWMutex{}
 	m.Reset()

@@ -1,4 +1,4 @@
-package metric
+package metrics
 
 // Window 窗口
 type Window struct {

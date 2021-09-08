@@ -1,10 +1,10 @@
 package main
 
-import "metric/metric"
+import "metric/metrics"
 
 func main() {
-	d := metric.NewDefaultMetricCollector()
-	d.Update(metric.Result{
+	d := metrics.NewDefaultCollector()
+	d.Update(metrics.Result{
 		Attempts:      0,
 		Errors:        0,
 		Successes:     0,

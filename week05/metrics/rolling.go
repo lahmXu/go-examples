@@ -1,11 +1,11 @@
-package metric
+package metrics
 
 import (
 	"sync"
 	"time"
 )
 
-// Number 固定的时间端内保存个数
+// Number 在有限的时间段内跟踪桶的个数, 当前是桶时长是 1 秒,且只保存最后 10 秒
 type Number struct {
 	Buckets map[int64]*numberBucket
 	Mutex   *sync.RWMutex
@@ -73,7 +73,7 @@ func (u *Number) UpdateMax(n float64) {
 	u.RemoveOldBuckets()
 }
 
-// Sum 某段时间数量求和
+// Sum 返回最后 10 秒的和
 func (u *Number) Sum(now time.Time) float64 {
 	sum := float64(0)
 
@@ -89,7 +89,7 @@ func (u *Number) Sum(now time.Time) float64 {
 	return sum
 }
 
-// Max 某段时间数量求最大值
+// Max 返回最后 10 秒内的最大值
 func (u *Number) Max(now time.Time) float64 {
 	var max float64
 

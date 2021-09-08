@@ -1,4 +1,4 @@
-package metric
+package metrics
 
 import (
 	"math"
@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-// Timing 窗口
+// Timing 维护每个时间桶的时间长短, 持续时间保存在一个数组中，以允许从源数据计算各种统计数据。
 type Timing struct {
 	Buckets map[int64]*timingBucket
 	Mutex   *sync.RWMutex
@@ -21,7 +21,7 @@ type timingBucket struct {
 	Durations []time.Duration
 }
 
-// NewTiming 新建时间窗口
+// NewTiming 新建滑动时间结构
 func NewTiming() *Timing {
 	r := &Timing{
 		Buckets: make(map[int64]*timingBucket),
@@ -43,7 +43,7 @@ func (c byDuration) Less(i, j int) bool {
 	return c[i] < c[j]
 }
 
-// SortedDurations 对时间窗口中的桶进行时间排序
+// SortedDurations 返回一个 time.Duration 数组，从最近 60 秒内发生的最短到最长排序。
 func (r *Timing) SortedDurations() []time.Duration {
 	r.Mutex.RLock()
 	t := r.LastCachedTime

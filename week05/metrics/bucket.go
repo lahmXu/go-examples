@@ -1,4 +1,4 @@
-package metric
+package metrics
 
 // Bucket 桶
 type Bucket struct {

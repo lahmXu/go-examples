@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7569d2c9-6622-4401-9438-5aa6f6b64eba" name="Default Changelist" comment="feat: commit code">
-      <change afterPath="$PROJECT_DIR$/week05/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week05/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week05/metric/bucket.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week05/metric/metric_collector.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week05/metric/rolling.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week05/metric/timing.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/week05/metric/window.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/example/hystrix_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week05/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/week05/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/week05/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/metric/bucket.go" beforeDir="false" afterPath="$PROJECT_DIR$/week05/metrics/bucket.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/metric/metric_collector.go" beforeDir="false" afterPath="$PROJECT_DIR$/week05/metrics/metric_collector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/metric/rolling.go" beforeDir="false" afterPath="$PROJECT_DIR$/week05/metrics/rolling.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/metric/timing.go" beforeDir="false" afterPath="$PROJECT_DIR$/week05/metrics/rolling_timing.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/week05/metric/window.go" beforeDir="false" afterPath="$PROJECT_DIR$/week05/metrics/window.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,49 +76,74 @@
       <recent name="$PROJECT_DIR$/week03/configs" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (1)">
-    <configuration name="go build go-examples/week01/example" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.TestHystrix in metric/example">
+    <configuration name="TestGauges in metric/example" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/week05/example" />
+      <root_directory value="$PROJECT_DIR$/week05" />
       <kind value="PACKAGE" />
-      <package value="go-examples/week01/example" />
+      <package value="metric/example" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/week01/example/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGauges\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build go-examples/week02" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHistograms in metric/example" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/week05/example" />
+      <root_directory value="$PROJECT_DIR$/week05" />
       <kind value="PACKAGE" />
-      <package value="go-examples/week02" />
+      <package value="metric/example" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/week02/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestHistograms\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHystrix in metric/example" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
-      <working_directory value="$PROJECT_DIR$/week05" />
-      <kind value="FILE" />
-      <package value="go-examples" />
+      <working_directory value="$PROJECT_DIR$/week05/example" />
+      <root_directory value="$PROJECT_DIR$/week05" />
+      <kind value="PACKAGE" />
+      <package value="metric/example" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/week05/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestHystrix\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestMeters in metric/example" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="go-examples" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <package value="go-examples" />
+      <working_directory value="$PROJECT_DIR$/week05/example" />
+      <root_directory value="$PROJECT_DIR$/week05" />
+      <kind value="PACKAGE" />
+      <package value="metric/example" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/week01/example/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestMeters\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTimer in metric/example" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="go-examples" />
+      <working_directory value="$PROJECT_DIR$/week05/example" />
+      <root_directory value="$PROJECT_DIR$/week05" />
+      <kind value="PACKAGE" />
+      <package value="metric/example" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestTimer\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Build.go build go-examples/week01/example" />
-        <item itemvalue="Go Build.go build go-examples/week02" />
+        <item itemvalue="Go Test.TestHystrix in metric/example" />
+        <item itemvalue="Go Test.TestTimer in metric/example" />
+        <item itemvalue="Go Test.TestMeters in metric/example" />
+        <item itemvalue="Go Test.TestHistograms in metric/example" />
+        <item itemvalue="Go Test.TestGauges in metric/example" />
       </list>
     </recent_temporary>
   </component>
